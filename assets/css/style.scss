@@ -4,21 +4,29 @@
 @import "{{ site.theme }}";
 
 // Modern clean styling
+// Updated body styling for LaTeX-like appearance
 body {
-  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
-  max-width: 960px;
+  font-family: "Latin Modern Roman", "Computer Modern", serif;
+  line-height: 1.5;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 2em;
-  background: #ffffff;
-  color: #333;
+  padding: 2em 3em;
+  background: #f6f6f6;
+  color: #000;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto Slab", serif;
-  font-weight: 400;
-  margin-bottom: 1rem;
+// Updated headings styling for a typeset look
+h1 {
+  font-family: "Latin Modern Roman", "Computer Modern", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 0.67em;
+}
+h2, h3, h4, h5, h6 {
+  font-family: "Latin Modern Roman", "Computer Modern", serif;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
 }
 
 /* Responsive images and embeds */
