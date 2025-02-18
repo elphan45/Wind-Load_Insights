@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Filderstadt Chroniken"
+title: Home
 lang: de
 description: "Historische und kulturelle Einblicke in Filderstadt – modern präsentiert und für Google optimal indexiert."
 seo: true
@@ -15,6 +15,8 @@ seo: true
 # Willkommen zu den Filderstadt Chroniken!
 
 Erleben Sie einen professionellen Auftritt historischer und kultureller Themen rund um Filderstadt.
+
+{% seo %}
 
 ## Aktuelle Beiträge
 
