@@ -1,21 +1,7 @@
-remote_theme: jekyll-theme-tufte
 title: Filderstadt Chronicles
 description: Historical and Cultural Chronicles of Filderstadt
 theme: jekyll-theme-minimal
 baseurl: "/filderstadt.github.io"
 url: "https://elphan45.github.io"
-
-# Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-scholar
-
-# LaTeX-style settings
-scholar:
-  style: apa
-  locale: de
-  sort_by: author
-  source: ./_bibliography
-  bibliography: references.bib
+future: false
