@@ -1,0 +1,114 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* LaTeX-style typography */
+body {
+  font-family: "Computer Modern Serif", "Latin Modern Roman", "Latin Modern Math", Georgia, Times, serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+  background: #fffff8;
+  color: #111;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Computer Modern Serif", "Latin Modern Roman", Georgia, Times, serif;
+  font-weight: normal;
+}
+
+/* LaTeX-style section numbering */
+.post {
+  counter-reset: section;
+}
+
+h2 {
+  counter-increment: section;
+  margin-top: 2em;
+}
+
+h2::before {
+  content: counter(section) ". ";
+}
+
+/* LaTeX-style quotes */
+blockquote {
+  font-style: italic;
+  margin: 2em 0;
+  padding: 0 2em;
+  border-left: none;
+}
+
+/* LaTeX-style citations */
+cite {
+  font-style: normal;
+}
+
+.citation {
+  color: #555;
+  font-size: 0.9em;
+}
+
+/* LaTeX-style abstract */
+.abstract {
+  margin: 2em 0;
+  font-size: 0.9em;
+  text-align: justify;
+}
+
+/* LaTeX-style bibliography */
+.bibliography {
+  margin-top: 3em;
+  border-top: 1px solid #ddd;
+  padding-top: 2em;
+}
+
+.bibliography-item {
+  text-indent: -2em;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+
+/* LaTeX-style page layout */
+@media print {
+  body {
+    font-size: 12pt;
+    margin: 1in;
+  }
+  
+  h1 {
+    font-size: 14pt;
+  }
+  
+  h2 {
+    font-size: 12pt;
+  }
+}
+
+/* LaTeX-style math */
+.math {
+  font-family: "Latin Modern Math", "Computer Modern Math", serif;
+}
+
+/* LaTeX-style footnotes */
+.footnote {
+  font-size: 0.8em;
+  margin-top: 2em;
+  border-top: 1px solid #ddd;
+  padding-top: 1em;
+}
+
+/* LaTeX-style tables */
+table {
+  border-collapse: collapse;
+  margin: 2em 0;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+  text-align: left;
+}
