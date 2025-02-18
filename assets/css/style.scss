@@ -3,20 +3,43 @@
 
 @import "{{ site.theme }}";
 
-/* LaTeX-style typography */
+// Modern clean styling
 body {
-  font-family: "Computer Modern Serif", "Latin Modern Roman", "Latin Modern Math", Georgia, Times, serif;
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 2em;
-  background: #fffff8;
-  color: #111;
+  background: #ffffff;
+  color: #333;
 }
 
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Computer Modern Serif", "Latin Modern Roman", Georgia, Times, serif;
-  font-weight: normal;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+/* Responsive images and embeds */
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Links */
+a {
+  color: #007acc;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: #005ea6;
+}
+
+/* Spacing */
+section, article, header, footer {
+  margin-bottom: 2rem;
 }
 
 /* LaTeX-style section numbering */
