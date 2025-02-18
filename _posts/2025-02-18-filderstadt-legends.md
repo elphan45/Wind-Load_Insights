@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title: Filderstadt – Stadt der Legenden
 date: 2025-02-18
-author: Jose Thomas
+author: Jose thomas
 ---
 
 # Filderstadt – Stadt der Legenden
