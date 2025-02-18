@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <title>Filderstadt Site</title>
+    <!-- Removed meta refresh redirection -->
+    <meta name="author" content="Jose thomas">
+    {% seo %}
+    <link rel="stylesheet" href="./assets/css/style.scss">
+    // ...existing head code...
+  </head>
+  <body>
+    // ...existing body code (consider adding a posts listing here)...  
+    <script>
+      window.onerror = function(message, source, lineno, colno, error) {
+        console.error('Error caught:', { message, source, lineno, colno, error });
+        return true;
+      };
+    </script>
+  </body>
+</html>

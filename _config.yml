@@ -8,3 +8,4 @@ markdown: kramdown
 future: false
 plugins:
   - jekyll-seo-tag
+exclude:
