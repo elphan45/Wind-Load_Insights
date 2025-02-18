@@ -1,7 +1,7 @@
 title: Filderstadt Chroniken
 description: "Historische und kulturelle Chroniken aus Filderstadt – professionell und modern präsentiert."
 theme: jekyll-theme-modernist
-baseurl: ""
+baseurl: ""  # Set to empty for username.github.io sites
 url: "https://elphan45.github.io"
 lang: de
 markdown: kramdown
