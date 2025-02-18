@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Filderstadt Chroniken
+title: "Filderstadt Chroniken"
 lang: de
 description: "Historische und kulturelle Einblicke in Filderstadt – modern präsentiert und für Google optimal indexiert."
 seo: true
@@ -12,7 +12,7 @@ seo: true
   <meta name="geo.region" content="DE-BW">
 </header>
 
-# Willkommen bei den Filderstadt Chroniken
+# Willkommen zu den Filderstadt Chroniken!
 
 Erleben Sie einen professionellen Auftritt historischer und kultureller Themen rund um Filderstadt.
 

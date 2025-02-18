@@ -1,11 +1,13 @@
 ---
-layout: page
-title: Filderstadt – Stadt der Legenden
-date: 2025-02-18
-author: Jose thomas
+layout: post
+title: "Filderstadt Legends"
+date: 2025-02-18 10:00:00 +0200
+lang: de
 ---
 
 # Filderstadt – Stadt der Legenden
+
+Filderstadt Legends: Erfahren Sie mehr über Legenden, Mythen und historische Meilensteine.
 
 ## Abstract
 
