@@ -2,7 +2,7 @@
 layout: post
 title: Filderstadt - Land der Legenden
 date: 2025-02-18
-author: Your Name
+author: Jose Thomas
 ---
 
 # Filderstadt: Land der Legenden
