@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import "{{ site.theme | default: 'default' }}";
 
 // Modern clean styling
 // Updated body styling for LaTeX-like appearance
