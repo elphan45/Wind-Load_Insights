@@ -7,10 +7,20 @@
     <meta name="author" content="Jose thomas">
     <title>Filderstadt – Stadt der Legenden</title>
     {% seo %}
+    <!-- Update stylesheet reference -->
+    <link rel="stylesheet" href="/assets/css/style.css">
     <!-- ...existing head code... -->
   </head>
   <body>
     <!-- In case redirection fails -->
     <p>Redirecting... If you are not redirected automatically, <a href="{{ site.baseurl }}/2025-02-18-filderstadt-legends.html">click here</a>.</p>
+    <!-- Global error handling -->
+    <script>
+      window.onerror = function(message, source, lineno, colno, error) {
+        console.error('Error caught:', { message, source, lineno, colno, error });
+        // Optionally: display a fallback message to the user or integrate with an error logging service.
+        return true; // Prevent the firing of the default event handler.
+      };
+    </script>
   </body>
 </html>
