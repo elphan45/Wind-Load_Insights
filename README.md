@@ -1,6 +1,6 @@
 # elphan45.github.io
 
-This is a demosntration project aimed at understand the set-up of Github pages
+This is a demonstration project aimed at understanding the set-up of Github pages
 
 ## About
 
