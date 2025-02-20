@@ -3,8 +3,7 @@
 
 @import "{{ site.theme | default: 'default' }}";
 
-// Modern clean styling
-// Updated body styling for LaTeX-like appearance
+
 body {
   font-family: "Latin Modern Roman", "Computer Modern", serif;
   line-height: 1.5;
@@ -15,7 +14,7 @@ body {
   color: #000;
 }
 
-// Updated headings styling for a typeset look
+
 h1 {
   font-family: "Latin Modern Roman", "Computer Modern", serif;
   font-size: 2.5em;
