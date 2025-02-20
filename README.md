@@ -10,8 +10,6 @@ This is a Jekyll-based website that provides information about Filderstadt's his
 
 - Historical articles and stories
 - Cultural insights
-- Modern, responsive design
-- Blog-style posts about Filderstadt
 
 ## Local Development
 
