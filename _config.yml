@@ -1,6 +1,6 @@
 title: "Wind Energy Insights"
 description: "Comprehensive insights on wind energy..."
-theme: jekyll-theme-modernist  # Uncomment this
+theme: jekyll-theme-modernist  
 baseurl: ""
 url: "https://elphan45.github.io"
 lang: de
