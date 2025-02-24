@@ -10,39 +10,10 @@ references:
   - title: "Example Reference 2"
     link: "https://example.com/reference2"
 ---
-\documentclass[12pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{natbib}
-\usepackage{color}
-\usepackage{url}
-\usepackage{geometry}
-\geometry{a4paper, margin=1in}
 
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=blue,
-    citecolor=blue,
-}
+# Wind Turbine Fatigue Load Data Analysis
 
-\title{Wind turbine fatigue load data analysis}
-\author{}
-\date{}
-
-\begin{document}
-
-\maketitle
-
-\tableofcontents
-
-\section*{Summary}
-\addcontentsline{toc}{section}{Summary}
+## Summary
 
 Wind turbine fatigue load data analysis is a critical field of study focused on understanding the stresses and strains that wind turbine structures experience during 
 operation, particularly due to varying wind conditions. As wind energy continues to 
@@ -74,7 +45,7 @@ evolves, ongoing innovations in data management and predictive modeling will be
 crucial for optimizing turbine performance and extending their operational lifespans, 
 ultimately supporting the broader adoption of renewable energy technologies.\cite{ref3}\cite{ref6}
 
-\section{Background}
+## Background
 
 Wind turbines play a crucial role in the generation of renewable energy, particularly 
 in regions rich in wind resources. The structural integrity and performance of wind 
@@ -108,13 +79,13 @@ time\cite{ref2}. This comprehensive approach to load analysis not only enhances 
 process but also contributes to the overall efficiency and safety of wind energy 
 systems.
 
-\section{Data Collection Methods}
+## Data Collection Methods
 
 The assessment of fatigue loads in wind turbines (WTs) relies heavily on sophisticated data collection methodologies. This process involves various techniques 
 and tools that capture relevant metrics for evaluating the structural integrity and 
 operational performance of WTs.
 
-\subsection{Data Acquisition Systems}
+### Data Acquisition Systems
 
 The implementation of Structural Health Monitoring (SHM) systems has become 
 crucial in the wind industry. These systems utilize a combination of high-frequency 
@@ -123,7 +94,7 @@ gauge sensors to collect data essential for assessing the condition and remainin
 lifetime of wind turbines. However, access to some of these high-frequency measurements may be restricted due to confidentiality issues, which can impact the 
 comprehensiveness of the data available for analysis\cite{ref2}.
 
-\subsection{Dataset Characteristics}
+### Dataset Characteristics
 
 A significant dataset was established for this study, consisting of 32,768 samples collected over an 8-month period. This dataset was divided into training and testing sets, 
 with 90\% allocated for training and 10\% for testing purposes. Careful consideration 
@@ -131,7 +102,7 @@ was taken to avoid data leakage, particularly due to the nature of time series d
 which requires independence among samples. The simulated data employed unique 
 turbulence seeds, ensuring that the samples remained statistically independent\cite{ref3}\cite{ref4}.
 
-\subsection{Filtering by Operational Modes}
+### Filtering by Operational Modes
 
 To enhance the accuracy of the analysis, data were filtered based on the operational 
 modes of the wind turbine: standstill, partial load, and full load. The dataset comprises 
@@ -142,7 +113,7 @@ filtering process allows for the construction of individual models tailored to t
 specific characteristics of each operational mode, which improves the reliability of 
 the monitoring system\cite{ref2}.
 
-\subsection{Feature Selection Methods}
+### Feature Selection Methods
 
 Before developing predictive models, it was necessary to identify significant predictor 
 variables. Various feature selection methods were applied to the datasets, resulting 
@@ -151,7 +122,7 @@ DELs. Notably, despite high correlations, some features, such as the acceleratio
 sensor data in the x direction, were found to be statistically insignificant. This emphasizes the importance of carefully selecting features to avoid redundancy and ensure 
 model accuracy\cite{ref2}.
 
-\subsection{Simulation and Modeling}
+### Simulation and Modeling
 
 The study further emphasizes the importance of creating a robust database with 
 high-fidelity load simulations across the entire variable space. This comprehensive 
@@ -160,16 +131,16 @@ time series data from various sensors, the modeling process aims to accurately
 capture the physical behavior of wind turbines, enabling better predictions of fatigue 
 loads and aiding in maintenance decision-making\cite{ref3}\cite{ref4}.
 
-\section{Data Analysis Techniques}
+## Data Analysis Techniques
 
-\subsection{Overview}
+### Overview
 
 In wind turbine fatigue load data analysis, various methodologies are employed to 
 accurately estimate the damage equivalent loads (DELs) experienced by wind turbine 
 components. This section outlines the prominent data analysis techniques utilized in 
 the field, including feature selection, data filtering, and modeling approaches.
 
-\subsection{Feature Selection}
+### Feature Selection
 
 The selection of relevant features is critical for developing predictive models of 
 DELs. Methods such as correlation analysis, stepwise regression, and dimensionality 
@@ -182,7 +153,7 @@ demonstrated the ability to distill a high-dimensional feature set down to a mor
 manageable and interpretable group, thereby enhancing model accuracy without 
 compromising essential information\cite{ref2}.
 
-\subsection{Data Filtering by Operational Modes}
+### Data Filtering by Operational Modes
 
 Data analysis is further refined by filtering datasets according to the operational 
 modes of the wind turbine, which include standstill, partial load, and full load. 
@@ -193,7 +164,7 @@ modes: 21.6\% for standstill, 70.6\% for partial load, and 7.8\% for full load\c
 focusing on these operational conditions, researchers can enhance the predictive 
 capabilities of their models while minimizing misinterpretations that arise from analyzing the entire dataset without consideration for operational context.
 
-\subsection{Data Cleaning and Outlier Detection}
+### Data Cleaning and Outlier Detection
 
 Before modeling, it is essential to address issues related to missing data and outliers. 
 The process of data cleaning involves visual inspection of time series statistics to 
@@ -202,7 +173,7 @@ Affected records are subsequently removed to ensure data integrity\cite{ref2}. T
 cleaning process helps maintain the quality of the dataset, facilitating more reliable 
 outcomes from predictive modeling efforts.
 
-\subsection{Modeling Techniques}
+### Modeling Techniques
 
 Various modeling techniques are employed to analyze the data and predict DELs. For 
 instance, the use of feed-forward neural networks has proven effective in capturing 
@@ -212,13 +183,13 @@ enhance the understanding of fatigue loads but also contribute to the developmen
 of surrogate models that streamline the analysis process by directly linking wind time 
 series to DELs.
 
-\section{Methodologies for Fatigue Load Analysis}
+## Methodologies for Fatigue Load Analysis
 
 In the analysis of wind turbine fatigue loads, various methodologies have been 
 employed to improve the accuracy and efficiency of load predictions. These methodologies primarily utilize surrogate models and statistical approaches to estimate 
 lifetime fatigue loads under varying operational conditions.
 
-\subsection{Surrogate Modeling Approaches}
+### Surrogate Modeling Approaches
 
 Surrogate models are simplified representations that approximate the relationship 
 between input variables and outputs, making them valuable in the assessment of 
@@ -226,7 +197,7 @@ site-specific lifetime fatigue loads. In this context, five surrogate modeling t
 were assessed: polynomial chaos expansion (PCE), quadratic response surface 
 (RS), universal Kriging, importance sampling, and nearest-neighbor interpolation\cite{ref3}.
 
-\subsubsection{Polynomial Chaos Expansion}
+#### Polynomial Chaos Expansion
 
 Among these methods, polynomial chaos expansion has shown robust performance 
 in predicting different site-specific loads. This approach operates under the principle 
@@ -236,7 +207,7 @@ understanding of how variations in environmental parameters influence fatigue lo
 providing a clear advantage in predictive accuracy compared to more traditional 
 techniques\cite{ref3}.
 
-\subsubsection{Quadratic Response Surface}
+#### Quadratic Response Surface
 
 The quadratic response surface method employs a central composite design (CCD) 
 to create a reduced-order model for wind turbine load prediction. This technique 
@@ -246,7 +217,7 @@ under various wind conditions\cite{ref3}. This method is particularly useful for
 effects of multiple environmental variables, even though it faces limitations in fully 
 capturing highly nonlinear turbine responses due to its reduced-order nature.
 
-\subsection{Load Prediction Comparisons}
+### Load Prediction Comparisons
 
 The performance of the various surrogate models was evaluated through site-specific 
 lifetime fatigue load predictions at multiple validation sites. The results indicated that 
@@ -254,7 +225,7 @@ reduced models, such as the quadratic response surface and PCE, provide more
 reliable predictions of blade root and tower top loads than more complex methods 
 like importance sampling and nearest-neighbor interpolation. Furthermore, the predictions of tower base loads were generally less accurate across all methods\cite{ref3}.
 
-\subsection{Statistical Uncertainty and Sensitivity Analysis}
+### Statistical Uncertainty and Sensitivity Analysis
 
 In addition to load mapping techniques, statistical analysis plays a crucial role in 
 understanding uncertainties associated with fatigue load estimations. Sobol sensitivity indices were utilized to evaluate the relative effects of various environmental 
@@ -265,9 +236,9 @@ This integrated approach of using surrogate modeling alongside statistical metho
 provides a structured framework for practical implementation in site feasibility assessments, ensuring that the assessments account for all relevant external parameters 
 critical to wind turbine performance under operational conditions\cite{ref3}.
 
-\section{Case Studies}
+## Case Studies
 
-\subsection{Overview of Fatigue Load Analysis in Wind Turbines}
+### Overview of Fatigue Load Analysis in Wind Turbines
 
 Fatigue load analysis is critical in the assessment of wind turbine performance and 
 lifespan. Various studies have explored the fatigue implications through dynamic 
@@ -275,26 +246,26 @@ monitoring systems, particularly by measuring strains on wind turbine structures
 This section discusses notable case studies that highlight the methods and results 
 of fatigue assessment in modern wind turbines.
 
-\subsection{Dynamic Reliability Analysis}
+### Dynamic Reliability Analysis
 
 Zhang et al. (2020) conducted a dynamic reliability analysis using a Duffing-system-based equivalent nonlinear system method. This study provided insights into 
 the structural reliability under dynamic loading conditions, contributing to the understanding of how nonlinear responses can influence fatigue failure mechanisms in 
 wind turbine towers\cite{ref1}.
 
-\subsection{Coil Spring Failure Analysis}
+### Coil Spring Failure Analysis
 
 Pastorcic et al. (2019) focused on coil spring failure and fatigue analysis, which is 
 relevant to the auxiliary components of wind turbines. Their work emphasized the 
 necessity of fatigue assessment in secondary structures that support turbine operations, demonstrating how component failure can impact overall turbine integrity\cite{ref1}.
 
-\subsection{Simulation of Fatigue Failure}
+### Simulation of Fatigue Failure
 
 Weibring et al. (2019) simulated fatigue failure on tooth flanks, considering pitting 
 initiation and growth. Their findings underline the importance of fatigue modeling 
 in gear systems used in wind turbines, offering a method to predict and mitigate 
 potential failures due to cyclic loading\cite{ref1}.
 
-\subsection{Structural Fatigue Reliability Evaluation}
+### Structural Fatigue Reliability Evaluation
 
 In a recent study, Zhang et al. (2023) evaluated structural fatigue reliability by 
 analyzing the probability of zero-crossings of stochastic response processes. This 
@@ -302,21 +273,21 @@ probabilistic approach allows for a more comprehensive understanding of fatigue
 failure, considering varying operational conditions experienced by wind turbines 
 throughout their lifespan\cite{ref1}.
 
-\subsection{Data-Driven Approaches in Load Estimation}
+### Data-Driven Approaches in Load Estimation
 
 Noppe et al. (2018) utilized both simulated and measured SCADA data to reconstruct 
 thrust loads history for wind turbines. Their study revealed the potential of machine 
 learning techniques in estimating loads with a high degree of accuracy. By implementing neural networks, they demonstrated how operational data can be leveraged 
 to enhance load modeling in wind energy systems\cite{ref2}.
 
-\subsection{Feature Selection Techniques}
+### Feature Selection Techniques
 
 Research by AM et al. introduced the use of neighbourhood component analysis 
 (NCA) as a feature selection technique for training artificial neural networks aimed at 
 modeling fatigue loads. This study contributes to the body of literature on optimizing 
 data inputs to achieve greater predictive accuracy in wind turbine fatigue assessments\cite{ref5}.
 
-\section{Challenges in Fatigue Load Data Analysis}
+## Challenges in Fatigue Load Data Analysis
 
 The analysis of fatigue loads in wind turbines presents several challenges due to 
 the complexity and variability of environmental conditions and material properties. 
@@ -325,7 +296,7 @@ a material is subjected to cyclic loading, is a significant concern for wind tur
 structures, particularly due to their exposure to time-variable loads from wind and 
 operational dynamics\cite{ref3}\cite{ref5}.
 
-\subsection{Complexity of Load Scenarios}
+### Complexity of Load Scenarios
 
 Wind turbine fatigue load assessment is complicated by the need to accurately characterize loading scenarios, which include both quasi-static and dynamic loads. Wind 
 loads are inherently uncertain and can vary significantly based on numerous factors, 
@@ -334,7 +305,7 @@ manufacturing improvements in turbine materials have resulted in advanced materi
 properties that differ from those used in traditional S-N curve tests, complicating 
 fatigue life predictions\cite{ref5}.
 
-\subsection{Variability in Environmental Conditions}
+### Variability in Environmental Conditions
 
 The assessment of site-specific lifetime fatigue loads relies heavily on environmental 
 variables, such as mean wind speed, turbulence, and wind shear. Studies indicate 
@@ -343,7 +314,7 @@ on fatigue loads, while other variables, including yaw angle and air density, ha
 negligible effect\cite{ref3}. This variability necessitates sophisticated modeling approaches 
 to accurately capture the effects of environmental conditions on fatigue loads.
 
-\subsection{Limitations of Traditional Methods}
+### Limitations of Traditional Methods
 
 Traditional fatigue analysis methods, such as the Palmgren–Miner rule combined with 
 rainflow counting, are commonly used for assessing damage accumulation. However, 
@@ -352,7 +323,7 @@ material's ability to heal from cracks under compressive stresses\cite{ref5}. Th
 may lead to conservative estimates of fatigue life, emphasizing the need for improved 
 methodologies that can consider these factors.
 
-\subsection{Use of Surrogate Models}
+### Use of Surrogate Models
 
 The integration of surrogate models in fatigue load predictions has shown promise, 
 with methods like polynomial chaos expansion demonstrating accurate results with 
@@ -361,7 +332,7 @@ challenge remains in balancing the computational demands of these models with th
 need for rapid assessments in practical applications. For instance, while universal 
 Kriging with polynomial chaos provides high accuracy, it also incurs longer computational times, which may not be feasible for real-time applications\cite{ref3}.
 
-\subsection{Real-Time Data Management}
+### Real-Time Data Management
 
 As real-time condition monitoring of wind turbine structures becomes increasingly 
 prevalent, the management and interpretation of the extensive data generated pose 
@@ -371,7 +342,7 @@ resources\cite{ref5}. The development of effective data management strategies is
 to ensure that real-time monitoring can contribute to proactive maintenance and 
 extended turbine lifespans.
 
-\section{Future Directions}
+## Future Directions
 
 The future of wind turbine fatigue load data analysis is poised for significant advancements, driven by the integration of machine learning (ML) techniques and enhanced 
 data collection methodologies. As the demand for efficient and reliable wind energy 
@@ -379,7 +350,7 @@ production continues to grow, research will increasingly focus on improving the
 predictive capabilities of models used to assess turbine loads and monitor structural 
 health.
 
-\subsection{Advancements in Machine Learning Techniques}
+### Advancements in Machine Learning Techniques
 
 Emerging ML methods hold the potential to refine the analysis of fatigue loads in wind 
 turbines. Recent studies have highlighted the effectiveness of physics-informed neural networks (PINN) for mapping supervisory control and data acquisition (SCADA) 
@@ -388,7 +359,7 @@ related to turbine performance under various operational conditions\cite{ref6}\c
 analysis (NCA), is also expected to play a critical role in improving the input data 
 quality for these models, leading to better predictive accuracy\cite{ref2}.
 
-\subsection{Enhanced Data Acquisition and Monitoring}
+### Enhanced Data Acquisition and Monitoring
 
 Improving data acquisition systems is crucial for effective fatigue load analysis. 
 High-resolution sampling of operational parameters, such as wind speed and structural strains, will provide a more nuanced understanding of the factors affecting 
@@ -398,7 +369,7 @@ model accuracy and reliability in predicting failures\cite{ref7}\cite{ref5}. Thi
 collection will enable operators to address minor issues proactively, minimizing 
 downtime and extending the lifespan of wind turbine assets.
 
-\subsection{Collaboration and Cross-Industry Learning}
+### Collaboration and Cross-Industry Learning
 
 Future research in wind turbine fatigue load analysis will benefit from collaboration 
 across different industries that employ advanced analytics and ML techniques. The 
@@ -421,5 +392,3 @@ models for estimating turbine loads and enhancing operational efficiency\cite{re
 
 \bibitem{ref7} Benefits of Real-Time Wind Turbine Monitoring (n.d.)
 \end{thebibliography}
-
-\end{document}
