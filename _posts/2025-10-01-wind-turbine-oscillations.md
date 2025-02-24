@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Wind Turbine Tower Oscillations During Construction"
-date: 2023-10-01
+date: 2025-10-01
 categories: posts
 math: true
 references:

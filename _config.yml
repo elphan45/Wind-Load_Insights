@@ -1,8 +1,8 @@
 title: "Wind Energy Insights"
 description: "Comprehensive insights on wind energy..."
 theme: jekyll-theme-modernist  
-baseurl: ""
-url: "https://elphan45.github.io/Wind-Load_Insights/"
+baseurl: "/Wind-Load_Insights"         # <-- Baseurl
+url: "https://elphan45.github.io"      # <-- Main URL
 lang: de
 
 markdown: kramdown
