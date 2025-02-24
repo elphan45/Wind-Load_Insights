@@ -37,7 +37,7 @@ The primary types of oscillations encountered during wind turbine tower construc
 include lateral oscillation, vertical oscillation, and vortex-induced vibration (VIV). 
 Lateral oscillations, characterized by side-to-side movements, can be exacerbated by 
 external forces like wind and seismic activity, necessitating the use of design features 
-such as bracing systems and dampers for mitigation.\cite{ref1, ref2} Vertical oscillations, which 
+such as bracing systems and dampers for mitigation.<sup><a href="#ref1">[1]</a></sup><sup><a href="#ref2">[2]</a></sup> Vertical oscillations, which 
 involve up-and-down movements, are influenced by the weight of the components 
 and the forces applied during installation, often requiring damping systems like tuned 
 mass dampers to enhance stability.\cite{ref1, ref2} VIV, a phenomenon caused by aerodynamic 
@@ -272,36 +272,24 @@ These designs performed better in spectral wind speed assessments for a one-year
 return period, enhancing both habitability and design safety. The study indicated that 
 aerodynamic modifications could significantly improve tower responses to wind pressures, suggesting that such innovations should be prioritized in future designs.\cite{ref6, ref16}
 
-\begin{thebibliography}{99}
-\bibitem{ref1} Oscillation Explained in Construction in the USA: Understanding the ... (n.d.).
-
-\bibitem{ref2} Force-partitioning analysis of vortex-induced vibrations of wind ... (n.d.).
-
-\bibitem{ref3} Validation of vibration reduction in barge-type floating offshore wind ... (n.d.).
-
-\bibitem{ref4} Wind-Induced Vibrations to Tall Buildings and Wind Turbines (n.d.).
-
-\bibitem{ref5} Tower design and monitoring for Wind turbines - Reprojekt GmbH (n.d.).
-
-\bibitem{ref6} Tower Oscillation Measurement Of Wind Turbines - Greensolver (n.d.).
-
-\bibitem{ref7} 4 Ways to Make Wind Turbines Safe for Birds and Bats (n.d.).
-
-\bibitem{ref8} CHAPTER 4 - REWI (n.d.).
-
-\bibitem{ref9} Wind Energy and Wildlife: We can Have Both | U.S. Geological Survey (n.d.).
-
-\bibitem{ref10} Safeguarding Wildlife: Minimizing Risk When Installing At-Home Wind ... (n.d.).
-
-\bibitem{ref11} Wind-Induced Vibrations to Tall Buildings and Wind Turbines - Academia.edu (n.d.).
-
-\bibitem{ref12} Wind Energy's Potential Effects on Wildlife and the Environment (n.d.).
-
-\bibitem{ref13} 6 Studies Show Wind Turbines Destroy Habitat (n.d.).
-
-\bibitem{ref14} The importance of investigating tower oscillation issues (n.d.).
-
-\bibitem{ref15} Wind Turbine Tower Vibration Modeling and Monitoring by the Nonlinear ... (n.d.).
-
-\bibitem{ref16} Method of damping wind turbine tower oscillations - Google Patents (n.d.).
-\end{thebibliography}
+<!-- Updated bibliography section -->
+<div class="bibliography">
+  <ul>
+    <li><strong>Ref1:</strong> Oscillation Explained in Construction in the USA: Understanding the ... (n.d.)</li>
+    <li><strong>Ref2:</strong> Force-partitioning analysis of vortex-induced vibrations of wind ... (n.d.)</li>
+    <li><strong>Ref3:</strong> Validation of vibration reduction in barge-type floating offshore wind ... (n.d.)</li>
+    <li><strong>Ref4:</strong> Wind-Induced Vibrations to Tall Buildings and Wind Turbines (n.d.)</li>
+    <li><strong>Ref5:</strong> Tower design and monitoring for Wind turbines - Reprojekt GmbH (n.d.)</li>
+    <li><strong>Ref6:</strong> Tower Oscillation Measurement Of Wind Turbines - Greensolver (n.d.)</li>
+    <li><strong>Ref7:</strong> 4 Ways to Make Wind Turbines Safe for Birds and Bats (n.d.)</li>
+    <li><strong>Ref8:</strong> CHAPTER 4 - REWI (n.d.)</li>
+    <li><strong>Ref9:</strong> Wind Energy and Wildlife: We can Have Both | U.S. Geological Survey (n.d.)</li>
+    <li><strong>Ref10:</strong> Safeguarding Wildlife: Minimizing Risk When Installing At-Home Wind ... (n.d.)</li>
+    <li><strong>Ref11:</strong> Wind-Induced Vibrations to Tall Buildings and Wind Turbines - Academia.edu (n.d.)</li>
+    <li><strong>Ref12:</strong> Wind Energy's Potential Effects on Wildlife and the Environment (n.d.)</li>
+    <li><strong>Ref13:</strong> 6 Studies Show Wind Turbines Destroy Habitat (n.d.)</li>
+    <li><strong>Ref14:</strong> The importance of investigating tower oscillation issues (n.d.)</li>
+    <li><strong>Ref15:</strong> Wind Turbine Tower Vibration Modeling and Monitoring by the Nonlinear ... (n.d.)</li>
+    <li><strong>Ref16:</strong> Method of damping wind turbine tower oscillations - Google Patents (n.d.)</li>
+  </ul>
+</div>
