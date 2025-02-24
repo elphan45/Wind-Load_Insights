@@ -15,12 +15,17 @@ seo: true
 
 Explore comprehensive research and discussions on wind turbine loads and their impact on energy systems.
 
-{% seo %}
-
-<ul>
+<div class="posts">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+    <article class="post">
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <div class="post-meta">
+        <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
+        {% if post.author %} • <span class="author">{{ post.author }}</span>{% endif %}
+      </div>
+      {% if post.excerpt %}
+        <div class="excerpt">{{ post.excerpt }}</div>
+      {% endif %}
+    </article>
   {% endfor %}
-</ul>
+</div>

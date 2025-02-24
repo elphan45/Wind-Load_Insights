@@ -20,3 +20,21 @@ plugins:
 # Modernist theme needs this empty section
 modernist:
   # Custom variables can go here
+
+# Post settings
+permalink: /posts/:title/
+future: true # Change to true to see future posts during development
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /posts/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
