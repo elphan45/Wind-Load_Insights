@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Home
-lang: de
-description: "Historische und kulturelle Einblicke in Filderstadt – modern präsentiert und für Google optimal indexiert."
+title: "Wind Energy Loads Analysis"
+description: "In-depth analysis of the loads and challenges faced by wind energy systems."
 seo: true
 ---
 
@@ -12,10 +11,16 @@ seo: true
   <meta name="geo.region" content="DE-BW">
 </header>
 
-# Willkommen zu den Filderstadt Chroniken!
+# Wind Energy Loads Analysis
 
-Erleben Sie einen professionellen Auftritt historischer und kultureller Themen rund um Filderstadt.
+Explore comprehensive research and discussions on wind turbine loads and their impact on energy systems.
 
 {% seo %}
 
-## Aktuelle Beiträge
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

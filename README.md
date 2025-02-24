@@ -1,27 +1,16 @@
-# elphan45.github.io
+# Wind Energy Insights
 
-This is a demonstration project aimed at understanding the set-up of Github pages
+This repository hosts a Jekyll site focused on wind energy loads analysis.  
+It features in-depth posts on topics such as wind turbine oscillations, fatigue load data analysis, and advanced monitoring techniques.
 
-## About
-
-This is a Jekyll-based website that provides information about Filderstadt's history, culture, and local stories. The site is built using GitHub Pages and features various articles and posts about the region.
-
-## Features
-
-- Historical articles and stories
-- Cultural insights
-
-## Local Development
-
-### Prerequisites
-
-- Ruby
-- Jekyll
-- Bundler
+## Structure
+- **_posts/**: Contains all blog posts (e.g., wind turbine oscillation and fatigue load analysis).
+- **index.md**: The homepage listing all posts.
+- **_config.yml**: Site configuration (title, theme, plugins, etc.).
+- **home.html**: Custom home layout.
 
 ## Contributing
-
-Feel free to submit issues and enhancement requests.
+Feel free to fork and suggest improvements. Pull requests are welcome.
 
 ## License
 

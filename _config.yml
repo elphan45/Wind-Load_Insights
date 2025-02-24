@@ -1,11 +1,17 @@
-title: Filderstadt Chroniken
-description: "Historische und kulturelle Chroniken aus Filderstadt – professionell und modern präsentiert."
+title: "Wind Energy Insights"
+description: "Comprehensive insights on wind energy, focusing on the loads and challenges experienced by wind turbines."
 theme: jekyll-theme-modernist
 baseurl: ""  # Set to empty for username.github.io sites
 url: "https://elphan45.github.io"
 lang: de
 markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
 future: false
+include:
+  - _posts
 plugins:
   - jekyll-seo-tag
+  - jekyll-mathjax
 exclude: []
