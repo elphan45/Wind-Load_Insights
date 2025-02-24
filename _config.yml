@@ -13,5 +13,4 @@ include:
   - _posts
 plugins:
   - jekyll-seo-tag
-  - jekyll-mathjax
 exclude: []
