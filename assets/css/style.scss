@@ -1,10 +1,17 @@
 ---
 ---
 
-@import '{{ site.theme | default: "default" }}';
+/* Main color variables */
+:root {
+  --primary-color: #005479;       /* DNV blue */
+  --secondary-color: #00b0ca;     /* DNV teal */
+  --text-color: #333333;
+  --light-gray: #f5f5f5;
+  --border-color: #dddddd;
+  --white: #ffffff;
+}
 
-// Modern clean styling
-// Updated body styling for LaTeX-like appearance
+/* Global resets and base styles */
 body {
   font-family: "Computer Modern Serif", "Latin Modern Roman", serif;
   line-height: 1.6;
@@ -20,15 +27,9 @@ body {
   padding: 0 20px;
 }
 
-// Updated headings styling for a typeset look
-h1 {
-  font-family: "Latin Modern Roman", "Computer Modern", serif;
-  font-size: 2.5em;
-  font-weight: 700;
-  margin-bottom: 0.67em;
-}
-h2, h3, h4, h5, h6 {
-  font-family: "Latin Modern Roman", "Computer Modern", serif;
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Computer Modern Serif", "Latin Modern Roman", serif;
   font-weight: 600;
   margin-bottom: 1rem;
   color: var(--primary-color);
@@ -82,7 +83,17 @@ header {
 }
 
 .site-nav {
-  display: flex;_includes/head.html main pages */
+  display: flex;
+  gap: 1.5rem;
+}
+
+.site-nav a {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Hero section for main pages */
 .hero-banner {
   background-color: var(--primary-color);
   color: var(--white);
@@ -131,7 +142,6 @@ header {
 .post-content {
   max-width: 800px;
   margin: 0 auto;
-  font-family: "Computer Modern Serif", "Latin Modern Roman", serif;
 }
 
 .post-content p {
@@ -344,37 +354,25 @@ blockquote {
   color: var(--white);
 }
 
-/* Computer Modern Font Setup */
+/* Computer Modern Font Setup (WOFF only) */
 @font-face {
   font-family: 'Computer Modern Serif';
-  src: url('../fonts/cmunrm.woff2') format('woff2'),
-       url('../fonts/cmunrm.woff') format('woff');
+  src: url('/assets/fonts/cmunrm.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Computer Modern Serif';
-  src: url('../fonts/cmunbx.woff2') format('woff2'),
-       url('../fonts/cmunbx.woff') format('woff');
+  src: url('/assets/fonts/cmunbx.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Computer Modern Serif';
-  src: url('../fonts/cmunti.woff2') format('woff2'),
-       url('../fonts/cmunti.woff') format('woff');
+  src: url('/assets/fonts/cmunti.woff') format('woff');
   font-weight: normal;
-  font-style: italic;
-}
-
-/* Add Bold-Italic if you have it */
-@font-face {
-  font-family: 'Computer Modern Serif';
-  src: url('../fonts/cmunbi.woff2') format('woff2'),
-       url('../fonts/cmunbi.woff') format('woff');
-  font-weight: bold;
   font-style: italic;
 }
 
@@ -440,37 +438,4 @@ blockquote {
   .post-content p {
     text-align: justify;
   }
-}
-
-/* New LaTeX-like styles */
-
-/* LaTeX-like paragraph justification */
-.post-content p {
-  text-align: justify;
-  hyphens: auto;
-}
-
-/* Theorem-like boxes */
-.theorem {
-  background: #f8f9fa;
-  border-left: 3px solid var(--primary-color);
-  padding: 1rem;
-  margin: 1.5rem 0;
-}
-
-/* Equation numbering */
-.post-content {
-  counter-reset: equation;
-}
-
-.equation {
-  counter-increment: equation;
-  margin: 1.5rem 0;
-  text-align: center;
-}
-
-.equation::after {
-  content: "(" counter(equation) ")";
-  display: block;
-  margin-top: 0.5rem;
-}
+} 
