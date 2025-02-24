@@ -1,26 +1,67 @@
 ---
 layout: default
 title: Home
+lang: de
+description: "Historische und kulturelle Einblicke in Filderstadt – modern präsentiert und für Google optimal indexiert."
 ---
-<!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta http-equiv="refresh" content="0; url=/2025/02/18/filderstadt-legends.html" />
-    <meta charset="UTF-8">
-    <title>Filderstadt Site</title>
-    <!-- Removed meta refresh redirection -->
-    <meta name="author" content="Jose thomas">
-    {% seo %}
-    <link rel="stylesheet" href="./assets/css/style.scss">
-    <!-- ...existing head code... -->
-  </head>
-  <body>
-    <!-- ...existing body code (consider adding a posts listing here)... -->
-    <script>
-      window.onerror = function(message, source, lineno, colno, error) {
-        console.error('Error caught:', { message, source, lineno, colno, error });
-        return true;
-      };
-    </script>
-  </body>
-</html>
+
+<div class="hero-banner">
+  <div class="container">
+    <h1>Filderstadt Chroniken</h1>
+    <p>Historische und kulturelle Chroniken aus Filderstadt – professionell und modern präsentiert.</p>
+  </div>
+</div>
+
+<div class="page-content">
+  <div class="container">
+    <div class="featured-post">
+      <h2>Neuester Beitrag</h2>
+      
+      {% assign featured_post = site.posts.first %}
+      <div class="post-card">
+        <a href="{{ featured_post.url | relative_url }}">
+          <h3>{{ featured_post.title }}</h3>
+          <div class="post-meta">
+            <span class="post-date">{{ featured_post.date | date: "%d %B %Y" }}</span>
+          </div>
+          <div class="post-excerpt">
+            {{ featured_post.content | strip_html | truncatewords: 50 }}
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="all-posts">
+      <h2>Aktuelle Beiträge</h2>
+      <div class="posts-grid">
+        {% for post in site.posts %}
+        <div class="post-card">
+          <a href="{{ post.url | relative_url }}">
+            <h3>{{ post.title }}</h3>
+            <div class="post-meta">
+              <span class="post-date">{{ post.date | date: "%d %B %Y" }}</span>
+            </div>
+            <div class="post-excerpt">
+              {{ post.content | strip_html | truncatewords: 20 }}
+            </div>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contact-section">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <img src="{{ '/assets/images/contact-person.jpg' | relative_url }}" alt="Contact Person">
+        <h3>Jose Thomas</h3>
+        <p>Senior Editor, Filderstadt Chroniken</p>
+        <a href="mailto:contact@filderstadtchroniken.de" class="contact-email">Send email</a>
+      </div>
+    </div>
+  </div>
+</div>
