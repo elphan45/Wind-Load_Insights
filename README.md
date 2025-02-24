@@ -1,6 +1,6 @@
 # elphan45.github.io
 
-This is a demosntration project aimed at understand the set-up of Github pages
+This is a demonstration project aimed at understanding the set-up of Github pages
 
 ## About
 
@@ -10,8 +10,6 @@ This is a Jekyll-based website that provides information about Filderstadt's his
 
 - Historical articles and stories
 - Cultural insights
-- Modern, responsive design
-- Blog-style posts about Filderstadt
 
 ## Local Development
 
