@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "{{ site.theme | default: 'default' }}";
+@import '{{ site.theme | default: "default" }}';
 
 // Modern clean styling
 // Updated body styling for LaTeX-like appearance
@@ -82,17 +82,7 @@ header {
 }
 
 .site-nav {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.site-nav a {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 0.9rem;
-}
-
-/* Hero section for main pages */
+  display: flex;_includes/head.html main pages */
 .hero-banner {
   background-color: var(--primary-color);
   color: var(--white);
@@ -450,4 +440,37 @@ blockquote {
   .post-content p {
     text-align: justify;
   }
+}
+
+/* New LaTeX-like styles */
+
+/* LaTeX-like paragraph justification */
+.post-content p {
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* Theorem-like boxes */
+.theorem {
+  background: #f8f9fa;
+  border-left: 3px solid var(--primary-color);
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+/* Equation numbering */
+.post-content {
+  counter-reset: equation;
+}
+
+.equation {
+  counter-increment: equation;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.equation::after {
+  content: "(" counter(equation) ")";
+  display: block;
+  margin-top: 0.5rem;
 }
