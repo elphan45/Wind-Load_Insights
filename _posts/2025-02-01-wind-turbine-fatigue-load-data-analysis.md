@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Wind Turbine Fatigue Load Data Analysis"
-date: 2025-10-01
+date: 2025-02-01
 categories: posts
 math: true
 author: "Jose Thomas"
