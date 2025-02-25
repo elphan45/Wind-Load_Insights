@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% raw %}{{ page.title | default: "Wind Energy Insights" }}{% endraw %}</title>
+  <title>{{ page.title | default: "Site" }}</title>
   <link rel="stylesheet" href="/assets/css/style.css">
-  {% raw %}{% if page.math %}{% endraw %}
+  {% if page.math %}
   <script type="text/javascript" async 
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
-  {% raw %}{% endif %}{% endraw %}
+  {% endif %}
 </head>
 <body>
-  {% raw %}{{ content }}{% endraw %}
+  {{ content }}
 </body>
 </html>
