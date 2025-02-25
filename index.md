@@ -3,6 +3,7 @@ layout: default
 title: "Wind Energy Loads Analysis"
 description: "In-depth analysis of the loads and challenges faced by wind energy systems."
 seo: true
+permalink: /
 ---
 
 <header>
@@ -16,16 +17,18 @@ seo: true
 Explore comprehensive research and discussions on wind turbine loads and their impact on energy systems.
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% assign unique_posts = site.posts | sort: 'date' | reverse | uniq %}
+  {% for post in unique_posts %}
     <article class="post">
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <div class="post-meta">
         <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
         {% if post.author %} • <span class="author">{{ post.author }}</span>{% endif %}
       </div>
-      {% if post.excerpt %}
-        <div class="excerpt">{{ post.excerpt }}</div>
-      {% endif %}
+      <div class="excerpt">
+        {{ post.excerpt | strip_html | truncatewords: 50 }}
+      </div>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
 </div>
