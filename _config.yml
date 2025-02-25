@@ -10,7 +10,6 @@ kramdown:
   input: GFM
   math_engine: mathjax
 
-future: false
 include:
   - _posts
 
@@ -23,7 +22,7 @@ modernist:
 
 # Post settings
 permalink: /posts/:title/
-future: true # Change to true to see future posts during development
+future: true  # Set to true to display future-dated posts
 
 # Collections
 collections:
