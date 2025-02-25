@@ -3,7 +3,7 @@
 This repository hosts a Jekyll site focused on wind energy loads analysis.  
 It features in-depth posts on topics such as wind turbine oscillations, fatigue load data analysis, and advanced monitoring techniques.
 
-<div style="text-align: center; margin: 20px 0;">
+<div style="display: flex; justify-content: center; margin: 20px 0;">
   <img src="https://github.com/user-attachments/assets/051bf216-b003-449c-b95c-508101e99764" 
        alt="Wind Energy Diagram" 
        width="500" 
