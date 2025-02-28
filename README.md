@@ -21,6 +21,7 @@ Feel free to fork and suggest improvements. Pull requests are welcome.
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
+Feel free to add more post or give your suggestions for imporvement.
 
 ---
 🏗️ Site under active development
